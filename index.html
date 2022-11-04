@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>animated webdesign</title>
+</head>
+<body>
+   <div class="container">
+     <header>
+         <div class="logo">
+             <a href="">mamondots</a>
+         </div>
+         <div class="menu">
+             <ul>
+                 <li><a href="">home</a></li>
+                 <li><a href="">about</a></li>
+                 <li><a href="">services</a></li>
+                 <li><a href="">portfolio</a></li>
+                 <li><a href="">blogs</a></li>
+             </ul>
+         </div>
+         <div class="btns">
+             <button class="btn">get started</button>
+         </div>
+     </header>
+     <div class="content">
+         <div class="content-info">
+             <h1>powerfull<br> solutions for your<br> business</h1>
+             <p class="detils">
+                You might wonder why a design would choose<br>
+                to use Morem text Patagraphs in English or<br>
+                their native language.
+             </p>
+             <div class="form">
+                 <input type="email" placeholder="Enter Your Email Address">
+                 <button>Subscribe</button>
+             </div>
+             <div class="order">
+                <p><i class="fa-regular fa-circle-check"></i> free 14-day trial</p>
+                <p><i class="fa-regular fa-circle-check"></i> no credit card required</p>
+             </div>
+         </div>
+          <div class="img-sites">
+             <div class="hero-img">
+                 <img src="img/mac-screen.13b61f8e.png">
+             </div>
+             <div class="mobile-img">
+                <img src="img/phone-screen.67a4cfc5.png">
+            </div>
+          </div>
+     </div>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+   <script>
+        let animation = anime({
+            targets:'.logo',
+            translateX:[80,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:300,
+        });
+
+        anime({
+            targets:'.menu',
+            translateY:[-40,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+        });
+
+        anime({
+            targets:'.btns',
+            translateX:[-80,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:300,
+        });
+
+        anime({
+            targets:'.content-info h1',
+            translateX:[40,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:500,
+        });
+
+        anime({
+            targets:'.content-info .detils',
+            translateX:[-40,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:500,
+        }); 
+
+        anime({
+            targets:'.form',
+            translateX:[40,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:500,
+        });
+
+        anime({
+            targets:'.order',
+            translateX:[-40,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:500,
+        });
+
+        anime({
+            targets:'.hero-img',
+            translateX:[80,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:800,
+        });
+
+        anime({
+            targets:'.mobile-img',
+            translateX:[-40,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:800,
+        });
+
+        </script>
+</body>
+</html>
